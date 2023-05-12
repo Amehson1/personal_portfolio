@@ -4,90 +4,153 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind custom link -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- CSS CUSTOM LINK -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Personal Portfolio</title>
 </head>
 <body>
-  <div class="h-100 w-100 bg-gray-600">
-    <div class="navbar active">
-      <a href="/index.html"><img src="my logo.svg" alt="my logo"></a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <!-- PORTFOLIO PAGE-Home & the NAV Bar -->
+  <section id="portfolio">
+    <div class="h-100 w-100 bg-gray-800">
+      <div class="navbar active fixed">
+        <section id="my logo.svg">
+          <a href="/index.html"><img src="my logo.svg" alt="my logo"></a>
+        </section>
+        <!-- <marquee behavior="" direction="right" class="text-yellow-300">how re you</marquee> -->
+        <marquee behavior="alt" direction="right" class="text-green-500 text-1xl font-bold"><i>Welcome to my personal Portfolio</i></marquee>
+        <ul class="space-x-8">
+          <li class="hover:bg-green-800"><a href="#home">Home</a></li>
+          <li class="hover:bg-green-800"><a href="#about">About</a></li>
+          <li class="hover:bg-green-800"><a href="#portfolio">Portfolio</a></li>
+          <li class="hover:bg-green-800"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- The welcoming page & Introducting page -->
+      <div class="flex flex-col md:flex-row justify-between pr-2">
+        <div class="">
+          <p class="text text-sm text-white pt-6"><span class="text-5xl">Hello!<br></span><span class="text-2xl text-blue-500"> I'm Ameh Sunday S.</span> A Web Developer based in Nigeria,<br> Lagos
+            who loves to craft attractive design experiences for the web.</p>
+          <div class="mt-44 flex items-center">
+            <p class="pl-4 text-sl text-white italic ">This is my official portfolio websites all<br> details & work experience & web development </p>
+            <a class="bg-zinc-500 border rounded-md border-black p-1 ml-16 pb-1 hover:bg-green-800" href="https://drive.google.com/file/d/0B7xc3_VFsssza0RDeXZTSU9xWFk/view?usp=share_link&resourcekey=0-dvPgX8kTQyXo8rhhcmIt0w">Download CV</a>
+          </div>
+        </div>
+        <div class="h-96 w-96">
+          <img class="rounded-2xl w-full h-full mb-16" src="./images/sunn.jpg" alt="">
+        </div>
+      </div> 
     </div>
-    <div class="flex justify-between pr-2">
+  </section>
+  <!-- skill acquired overtime -->
+    <div class=" flex justify-evenly h-20 w-100 pl-4 pt-2 space-x-14 bg-gray-400">
+      <div class="flex-row">
+        <i class="fa-brands fa-html5 fa-2xl"></i>
+        <p>HTML</p>
+      </div>
+      <div class="flex-row">
+        <i class="fa-brands fa-css3 fa-2xl"></i>
+        <P>CSS</P>
+      </div>
+      <div class="flex-row">
+        <i class="pr-16 fa-brands fa-js fa-2xl"></i>
+        <p class="text-1xl">JAVASCRIPT</p>
+      </div>
+      <div class="flex-row">
+        <i class=" pr-6 fa-brands fa-python fa-2xl"></i>
+        <p>PYTHON</p>
+      </div>
+    </div>
+  <!-- ABOUT PAGE- Work Experience and Developer Area of strength -->
+  <section id="about">
+    <div class="h-80 w-100 bg-gray-600 text-white">
+      <h1 class="flex justify-end mr-40 text-center pb-6 pt-6 text-bold text-2xl">Developer and Designer, specialized in<br> UI/UX and Web Developer</h1>
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-col pl-12">
+          <p class="text-5xl font-bold text-blue-500">3 +</p>
+          <p class="font-bold text-2xl pt-0">Years <br>Working<br>Experience</p>
+        </div>
+
+        <!--The strength of Developer -->
+        <div class="flex flex-row gap-4 justify-end mr-20 h-40">
+          <div class="h-40 w-40 bg-blue-500 justify-center pt-20 p-7">
+            <i class="fa-solid fa-tv"></i>
+            <p class="">Full Stack<br>Developer</p>
+          </div>
+          <div class="h-40 w-40 bg-gray-400 py-20 p-7">
+            <i class="fa-solid fa-palette fa-rotate-90"></i>
+            <p class="">UI/UX<br>Designer</p>
+          </div>
+          <div class="h-40 w-40 bg-gray-400 py-20 p-7">
+            <i class="fa-sharp fa-light fa-bolt"></i>
+            <i class="fa-thin fa-bolt"></i>
+            <p class="">Branding<br>Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- about page and years of Experience -->
+    <div class="h-50 bg-black text-white flex flex-col md:flex-row justify-between">
+      <div class="flex flex-col md:flex-row">
+        <img class="bg-red-400 bg-gradient-to-tl rounded-2xl" src="images/It puture.jpg" alt="">
+        <p class="text text-xs pb-4"><i class="fa-solid fa-quote-left"></i> I am a Web Developer, I am an accomplished coder and programmer. A successful<br>
+          IT administrator with analytical and software experience of investigating & diagnosing<br> problem and also knowledge of IT operating systems,
+          especially windows, exchange &<br> citric. Multi-talented with good all round technical skills& ability to develop and 
+          maintain<br> close working relationships with other support & development teams. Having the personal<br>drive require to deliver a
+          service that exceeds the expectations of colleagues & end users<br> through a positive, well organised & structure work ethic.
+          Profile Summary: Looking<br> for a career advancement opportunity with a company that will<br>challenge
+          my problem solving skills and allow me to develop my knowledge & potential.</p>
+      </div>
+      <div class="flex flex-col pr-16">
+        <p class="pr-8 pt-6 pb-6 text-sm">Clients<br>Satisfaction<br><span class="text-blue-500 text-sm">100 %</span></p>
+        <p class="pr-4 pb-4 text-sm">Clients On<br>Worldwide<span class="text-blue-500 text-sm"><br>+ 80</span></p>
+        <p class="pr-4 pb-4 text-sm">Project done<span class="text-blue-500 text-sm"><br>240</span></p>
+      </div>
+    </div>
+  <!-- <form id="myForm" action="submit" method="post"> -->
+    <div class="h-auto bg-black pt-6 flex justify-between my-1">
+      <div class="space-x-8 space-y-8">
+        <p class="text-2xl text-white pl-4">Let's Connect;</p>
+        <p class="text-sl text-white pl-4">Email: sundayamehson@gmail.com</p>
+        <p class="text-sl text-white pl-4">Phone: +2348063683917, +2348074160084</p>
+        <p class="text-sl text-white pl-4">Address: No. 10 Disu Esan Orile, Coker, Lagos, Nigeria.</p>
+      </div>
+      <div class="flex flex-col space-y-4 pr-4 pt-2">
+        <input class="border-2 border-blue-400 rounded-md w-64" type="text" placeholder="Your Name:">
+        <input class="border-2 border-blue-400 rounded-md w-64" type="text" placeholder="Your email Address:">
+        <div class="">
+          <label class="text text-white" for="message">Tell us About Your Project:</label>
+          <textarea class="border-2 border-blue-400 rounded-md" name="message" id="message" cols="32" rows="10"></textarea>
+        </div>
+        <div class="mb-12">
+          <button type="submit" class="text-white border bg-blue-500 ml-16 rounded-md mb-4 w-28 hover:bg-green-800">send message</button>
+        </div>
+      </div>
+    </div>
+  <!-- </form> -->
+  <!-- Contact Page- Social media links & the Home arrow link -->
+  <section id="contact">
+    <div class="grid grid-cols-2 w-full p-2 my-1 bg-gray-400">
       <div class="">
-        <h1 class="text-white text-3xl pl-4 pt-8 font-bold text-slate-700">Welcome to my personal Portfolio</h1>
-        <div class="mt-44 flex items-center">
-          <p class="pl-4 text-sl text-white italic ">This is my official portfolio websites all<br> details & work experience & web development </p>
-          <a class="bg-zinc-500 border rounded-md border-black p-1 ml-16 pb-1" href="https://drive.google.com/file/d/0B7xc3_VFsssza0RDeXZTSU9xWFk/view?usp=share_link&resourcekey=0-dvPgX8kTQyXo8rhhcmIt0w">Download CV</a>
-        </div>
-      </div>
-      <img class="" src="./images/sunn.jpg" alt="">
-    </div> 
-  </div>
-
-  <div class="h-80 w-100 bg-gray-300 text-white">
-    <h1 class="flex justify-end mr-40 text-center pb-6 pt-6 text-bold text-2xl">Developer and Designer, specialized in<br> UI/UX and Web Developer</h1>
-    <div class="">
-      <div class="h-1 pl-12">
-        <p class="text-5xl font-bold text-blue-500">4 +</p>
-        <p class="font-bold text-2xl pt-0">Years <br>Working<br>Experience</p>
-      </div>
-
-      <div class="flex flex-col-3 gap-4 justify-end flex flex-col-3 gap-4 mr-20 h-40 bg-gray-600">
-        <div class="h-40 w-40 bg-blue-500 justify-center pt-20 p-7">
-          <i class="fa-solid fa-tv"></i>
-          <p class="">Full Stack<br>Developer</p>
-        </div>
-        <div class="h-40 w-40 bg-gray-400 py-20 p-7">
-          <i class="fa-solid fa-palette fa-rotate-90"></i>
-          <p class="">UI/UX<br>Designer</p>
-        </div>
-        <div class="h-40 w-40 bg-gray-400 py-20 p-7">
-          <i class="fa-sharp fa-light fa-bolt"></i>
-          <!-- <i class="fa-thin fa-bolt" style="color: #e4e5e7;"></i> -->
-          <i class="fa-thin fa-bolt"></i>
-          <p class="">Branding<br>Designer</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="bottom-container h-50 bg-black text-white flex justify-between">
-    <div class="flex justify-between">
-      <img class="bg-red-400 bg-gradient-to-tl" src="images/sunn.jpg" alt="">
-      <p class="text"><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit, amet consectetur adipisicing<br> elit. Quis explicabo hic cumque eum iure rerum,<br> fugiat reiciendis temporibus, dolorem impedit nihil?<br> Mollitia praesentium expedita quidem rem dolorem<br> voluptatum omnis odit</p>
-    </div>
-    <div class="flex">
-      <p class="text pr-8 pb-6">Satisfaction<br>Clients <br><span class="text-2xl text-blue-500 pb-4">100 %</span></p>
-      <p class="">Clients On<br>Worldwide</p>
-    </div>
-  </div>
-</body>
-
-  <!-- <body style="position: relative"> -->
-    <div class="grid grid-cols-2 w-full p-10">
-      <div class="">
-          <h2>&copy;2023 Copyright <b>Ameh Sunday S.</b> All Rights Reserved</h2>
+        <h2>&copy;2023 Copyright <b>Ameh Sunday S.</b> All Rights Reserved</h2>
       </div>
       <div class="space-x-4 flex flex-row justify-end ">
-        <a href="https://twitter.com/Amehson1" class="brands border-2 rounded-3xl border-blue-400"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://web.facebook.com/amehsonsunday" class="brands border-2 rounded-3xl border-blue-400"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/amehsonsunday/" class="brands border-2 rounded-3xl border-blue-400"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/amehson-sunday-s-110716196/" class="brands border-2 rounded-3xl border-blue-400"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.tiktok.com/@amehsonsunday" class="brands border-2 rounded-3xl border-blue-400"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://twitter.com/Amehson1" class="brands border-2 rounded-3xl border-blue-400 hover:bg-green-900"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://web.facebook.com/amehsonsunday" class="brands border-2 rounded-3xl border-blue-400 hover:bg-green-800"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/amehsonsunday/" class="brands border-2 rounded-3xl border-blue-400 hover:bg-green-800"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/amehson-sunday-s-110716196/" class="brands border-2 rounded-3xl border-blue-400 hover:bg-green-800"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.tiktok.com/@amehsonsunday" class="brands border-2 rounded-3xl border-blue-400 hover:bg-green-800"><i class="fa-brands fa-tiktok"></i></a>
         <div class="btn-holder border border-2 border-gray-300 rounded-md bg-blue-500">
-          <a href="a" class="brands btn"><i class="fa-solid fa-arrow-up"></i></a>
+          <a href="#" class="brands btn" id="home-link"><i class="fa-solid fa-arrow-up hover:bg-green-800"></i></a>
         </div>
       </div>
-      
     </div>
-    
-  <!-- </body> -->
+  </section>
+
+  <!-- The link to the external Javascript -->
+  <script src="./java.js"></script>
+</body>
 </html>
