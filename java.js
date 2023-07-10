@@ -1,14 +1,4 @@
-//  get a reference to the home link
-// const homeLink = document.getElementById("home-link")
-
-
-
-
-  
-  
-  
-
-  const links = document.querySelectorAll('nav ul li a');
+   const links = document.querySelectorAll('nav ul li a');
   
   links.forEach(link => {
     link.addEventListener('click', function(event) {
